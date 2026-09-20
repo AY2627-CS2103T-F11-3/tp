@@ -1,5 +1,6 @@
 title: "AB-3"
 theme: minima
+baseurl: "/tp"
 
 header_pages:
   - UserGuide.md
@@ -8,7 +9,7 @@ header_pages:
 
 markdown: kramdown
 
-repository: "se-edu/addressbook-level3"
+repository: "AY2627-CS2103T-F11-3/tp"
 github_icon: "images/github-icon.png"
 
 plugins:
