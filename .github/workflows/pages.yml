@@ -21,20 +21,16 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          bundler-cache: true
-          working-directory: docs
-
       - name: Build with Jekyll
-        working-directory: docs
-        run: bundle exec jekyll build
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: docs
+          destination: ./_site
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: docs/_site
+          path: ./_site
 
   deploy:
     environment:
