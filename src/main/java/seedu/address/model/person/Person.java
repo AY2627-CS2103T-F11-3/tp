@@ -66,7 +66,7 @@ public class Person {
     public Remark getRemark() {
         return remark;
     }
-    
+
     /**
      * Returns true if both persons have the same name.
      * This defines a weaker notion of equality between two persons.
