@@ -2,6 +2,7 @@
 /.gradle/
 /build/
 src/main/resources/docs/
+.gradle-user/
 
 # IDEA files
 /.idea/
